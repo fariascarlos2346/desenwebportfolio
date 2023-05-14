@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+   <title>Desenvolvedor Web</title>
+</head>
+<body>
+   <nav>
+      <ul>
+         <li>
+            <a href="index.html">Sobre Mim</a>
+         </li>
+         <li>
+            <a href="project.html">Projetos</a>
+         </li>
+         <li>
+            <a href="contact.html">Contato</a>
+         </li>
+      </ul>
+   </nav>
+   <div class="caixa">
+      <img src="img/raridades.jpg" alt="nós na foto">
+      <h1>Soluções Web</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laudantium facere, quibusdam provident vero ad accusamus, et rerum quam commodi minima, ratione ducimus sequi nemo repudiandae illum! Mollitia, beatae eos!</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe nam beatae eos minima porro, suscipit odio, nostrum excepturi exercitationem molestiae quisquam quas! Iusto officiis veniam, commodi corrupti repudiandae explicabo atque!</p>
+
+      <button onclick="abrir()">Entrar em Contato</button>
+   </div>
+   <form action="https://formsubmit.co/fariascarlos2346@gmail.com" method="POST">
+      <input type="text" name="name" required placeholder="Nome">
+      <input type="email" name="email" required placeholder="Email">
+      <textarea type="text" name="duvida" placeholder="Sua dúvida aqui"></textarea>
+      <button type="submit">Enviar</button>
+      <button onclick="fechar()"type="button" class="voltar">Voltar</button>
+   </form>
+</body>
+<script>
+   function abrir(){
+      document.querySelector("form").style.opacity = 1
+      document.querySelector("div").style.opacity = 0.2
+   }
+   function fechar(){
+      document.querySelector("form").style.opacity = 0
+      document.querySelector("div").style.opacity = 1
+   }
+
+</script>
+</html>
+
