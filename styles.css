@@ -74,12 +74,12 @@ form {
 }
 
 button {
-   background: #40BB15;
+   background: #3508d9;
    border: none;
-   padding: 10px;
+   padding: 20px;
    border-radius: 5px;
    font-weight: bold;
-   width: 147px;
+   width: 247px;
    cursor: pointer;
    color: #FFFFFF;
 }
